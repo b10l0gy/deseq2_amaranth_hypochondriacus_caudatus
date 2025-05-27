@@ -3,3 +3,4 @@ This repo contains code concerning differential expression analysis (DEA) with b
 
 ## Project setup
 This project is based on poetry.
+First, install poetry following the documentation provided by https://python-poetry.org/docs/
