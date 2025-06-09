@@ -5,6 +5,12 @@ from pydeseq2.dds import DeseqDataSet
 from pydeseq2.default_inference import DefaultInference
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / 'data'; DATA.mkdir(parents=True, exist_ok=True)
+RAW = DATA / 'raw'; RAW.mkdir(parents=True, exist_ok=True)
+PREPROCESSED = DATA / 'preprocessed'; PREPROCESSED.mkdir(parents=True, exist_ok=True)
+MODELS = ROOT / 'models'; MODELS.mkdir(parents=True, exist_ok=True)
+
 def get_root_path() -> Path:
     """
     Get the root path of the project directory.
@@ -70,7 +76,7 @@ def save_model(model, design_factors: list):
     design_factors_string = ''
     for factor in design_factors:
         design_factors_string += '_' + factor
-    with open(f'../models/dds{design_factors_string}.pkl', "wb") as f:
+    with open(os.path.join(MODELS, f'../models/dds{design_factors_string}.pkl'), "wb") as f:
         pkl.dump(model, f)
 
 def load_model(design_factors: list):
