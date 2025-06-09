@@ -47,7 +47,11 @@ def save_df(df: pd.DataFrame, filename: str):
     Returns:
         None
     """
-    return df.to_csv(os.path.join('../data/', filename))
+    dir_path = DATA
+    if 'preprocess' in filename:
+        dir_path = PREPROCESSED
+    
+    return df.to_csv(os.path.join(dir_path, filename))
 
 def load_df(filename: str):
     """
