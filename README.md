@@ -49,4 +49,10 @@ This should create two .csv files in ``data/preprocessed``
 Run the notebook ``train_model.ipynb`` to train the model/s.
 The trained models are saved to ``data/models`` and can be loaded with ``load_model()`` from utils.
 
+## PCA plot
+To assess the data quality, we can apply principal component analysis and plot the resulting data.
+At time of writing this the python version of Deseq2 did not provide the functionality of regularized log transformation. Therefore, we used the R package to generate a .csv containing this.
+First run the R notebook ``R_dds.ipynb`` which is located in ``/R_code/``.
+This should generate ``rlog_transformed_data.csv`` and ``rlog_transformed_data_wo_batch_effect.csv`` in ``/data/``.
 
+Then run ``PCA_plot.ipynb`` to create the PCA plots.
