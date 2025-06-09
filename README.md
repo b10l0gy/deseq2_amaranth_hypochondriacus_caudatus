@@ -39,4 +39,14 @@ python -m ipykernel install --user --name deseq2-amaranth --display-name "Deseq2
 ```
 
 ## Add Raw Data
-At first, put the counts data in ``./data/raw``.
+At first, put the counts data ``counts.csv`` and ``batches_meta_data.csv`` in ``./data/raw``.
+
+## Preprocess data
+Run the notebook ``preprocessing.ipynb`` to preprocess the data.
+This should create two .csv files in ``data/preprocessed``
+
+## Train models
+Run the notebook ``train_model.ipynb`` to train the model/s.
+The trained models are saved to ``data/models`` and can be loaded with ``load_model()`` from utils.
+
+
