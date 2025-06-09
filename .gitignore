@@ -3,9 +3,6 @@
 *.txt
 *.pdf
 
-# ignore all files in data dir
-/data/
-
 # all pickle
 *.pkl
 
