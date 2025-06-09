@@ -10,6 +10,7 @@ DATA = ROOT / 'data'; DATA.mkdir(parents=True, exist_ok=True)
 RAW = DATA / 'raw'; RAW.mkdir(parents=True, exist_ok=True)
 PREPROCESSED = DATA / 'preprocessed'; PREPROCESSED.mkdir(parents=True, exist_ok=True)
 MODELS = ROOT / 'models'; MODELS.mkdir(parents=True, exist_ok=True)
+PLOTS_DIR_PATH = ROOT / 'plots'; PLOTS_DIR_PATH.mkdir(parents=True, exist_ok=True)
 
 def get_root_path() -> Path:
     """
