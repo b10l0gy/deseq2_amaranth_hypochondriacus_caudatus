@@ -7,7 +7,7 @@ This repo contains code concerning differential expression analysis (DEA) with b
 
 ```bash
 git clone https://github.com/b10l0gy/deseq2_amaranth_hypochondriacus_caudatus
-cd your-project
+cd deseq2_amaranth_hypochondriacus_caudatus
 ```
 
 ### 2. Install Poetry (if not already installed)
