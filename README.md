@@ -35,7 +35,7 @@ poetry shell
 ### 5. Install Jupyter Kernel for the Project
 
 ```bash
-poetry run python -m ipykernel install --user --name=$(poetry env info --name) --display-name "Deseq2 Amaranth"
+python -m ipykernel install --user --name deseq2-amaranth --display-name "Deseq2 Amaranth"
 ```
 
 ## Add Raw Data
