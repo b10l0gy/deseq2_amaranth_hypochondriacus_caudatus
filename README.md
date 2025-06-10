@@ -56,3 +56,15 @@ First run the R notebook ``R_dds.ipynb`` which is located in ``/R_code/``.
 This should generate ``rlog_transformed_data.csv`` and ``rlog_transformed_data_wo_batch_effect.csv`` in ``/data/``.
 
 Then run ``PCA_plot.ipynb`` to create the PCA plots.
+
+## Differential Gene Analysis
+Run ``analysis.ipynb`` which will create the two files ``statistical_results_hypochondriacus_caudatus_df.csv`` (before lfc shrinkage) and ``significant_DEG_results_hypochondriacus_caudatus_df.csv`` (after lfc shrinkage). In the notebook, you can find the difference of the number of DEG before and after lfc. This data is used by the next steps.
+
+## Boxplots of the most DEGs
+Run ``boxplot_most_expressed_DEGs.ipynb`` to create box plots for the most DEGs.
+
+## GO enrichment analysis
+Run ``go_enrichment_species.ipynb`` to conduct go enrichment analysis. This will create plots for 1) all DEGs, 2) DEGs of hypocondriacus, 3) DEGs of caudatus.
+
+## Finish
+Congratulations! You made it through the whole analysis! You can try to build up on this project to conduct DGE-analysis on other species or data.
